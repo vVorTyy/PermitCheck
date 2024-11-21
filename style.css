@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lexend:wght@100..900&display=swap');* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(./images/Cycling\ b.jpg);
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.blur-overlay {
+  position: absolute;
+  background: #00000083;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px); /* درجة التمويه */
+  -webkit-backdrop-filter: blur(10px); /* دعم المتصفحات */
+  z-index: 1;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0); /* إضافة شفافية للخلفية */
+  padding: 20px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  margin: 30px;
+  z-index: 2; /* ضمان أن تكون فوق التمويه */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+
+.search-container{
+  position: relative;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: transparent;
+  background-color: rgb(255, 255, 255); /* إضافة شفافية للخلفية */
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #9b7b3f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  height: 80%;
+  width: 100px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#result {
+  background-color: transparent;
+  border-radius: 8px;
+  display: none;
+  
+}
+
+.resultss li {
+  position: relative;
+  margin: 6px 0;
+  border: #656565 solid 1px;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-align: left;
+  background-color: #0000000e;
+  background-color: rgb(255, 255, 255); /* إضافة شفافية للخلفية */
+  width: 100%;
+
+}
+
+.resultss li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/Logo\ sport\ bu.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.04; /* تقليل الشفافية */
+  border-radius: 10px;
+}
+
+.resultss li.expired {
+  border: #757575 solid 1px; /* حدود للعنصر */
+  background-color: #00000009; /* لون خلفية خفيف */
+  background-color: rgb(255, 255, 255); /* إضافة شفافية للخلفية */
+
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin: 0;
+}
+
+.cart-header img {
+  width: 70px;
+}
+
+.cart-header {
+  font-size: 10px;
+}
+
+.resultss .cart-content {
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.681);
+  margin: 20px 0;
+}
+
+.resultss .cart-content strong {
+  font-size: 16px;
+  color: #000000;
+  line-height: 35px;
+}
+
+
+@media (min-width: 600px) {
+  .container {
+    width: 600px;
+  }
+}

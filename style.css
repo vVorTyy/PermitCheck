@@ -133,21 +133,21 @@ button:hover {
 }
 
 .cart-header img {
-  width: 70px;
+  width: 50px;
 }
 
 .cart-header {
-  font-size: 10px;
+  font-size: 7px;
 }
 
 .resultss .cart-content {
-  font-size: 13px;
+  font-size: 10px;
   color: rgba(0, 0, 0, 0.681);
   margin: 20px 0;
 }
 
 .resultss .cart-content strong {
-  font-size: 16px;
+  font-size: 10px;
   color: #000000;
   line-height: 35px;
 }
